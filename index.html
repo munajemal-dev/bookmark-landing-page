@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <title>Bookmark landing page</title>
+
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "soft-blue": "hsl(231, 69%, 60%)",
+              "soft-red": "hsl(0, 94%, 66%)",
+              "grayish-blue": "hsl(229, 8%, 60%)",
+              "very-dark-blue": "hsl(229, 31%, 21%)",
+            },
+            fontFamily: {
+              sans: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans bg-white text-very-dark-blue">
+   
+    <header
+      class="max-w-6xl mx-auto px-6 py-10 flex items-center justify-between"
+    >
+   
+      <a href="#">
+        <img src="./images/logo-bookmark.svg" alt="Bookmark Logo" class="h-6" />
+      </a>
+
+    
+      <nav
+        class="hidden md:flex items-center gap-10 text-xs font-medium tracking-widest uppercase"
+      >
+        <a
+          href="#features"
+          class="text-very-dark-blue hover:text-soft-red transition-colors duration-200"
+        >
+          Features
+        </a>
+        <a
+          href="#pricing"
+          class="text-very-dark-blue hover:text-soft-red transition-colors duration-200"
+        >
+          Pricing
+        </a>
+        <a
+          href="#contact"
+          class="text-very-dark-blue hover:text-soft-red transition-colors duration-200"
+        >
+          Contact
+        </a>
+
+        <button
+          class="bg-soft-red hover:bg-white text-white hover:text-soft-red border-2 border-soft-red px-8 py-3 rounded-lg shadow-md font-medium tracking-widest transition-all duration-200 cursor-pointer"
+        >
+          LOGIN
+        </button>
+      </nav>
+
+      <button class="md:hidden">
+        <img src="./images/icon-hamburger.svg" alt="Open Menu" />
+      </button>
+    </header>
+
+    <section
+      class="max-w-6xl mx-auto px-6 pt-6 pb-28 flex flex-col-reverse md:flex-row items-center gap-12"
+    >
+    
+      <div
+        class="flex-1 flex flex-col items-center md:items-start text-center md:text-left"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-medium text-very-dark-blue leading-tight mb-6"
+        >
+          A Simple Bookmark Manager
+        </h1>
+
+        <p
+          class="text-grayish-blue text-base md:text-lg leading-relaxed mb-8 max-w-md"
+        >
+          A clean and simple interface to organize your favorite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+
+       
+        <div class="flex items-center gap-4">
+          <button
+            class="bg-soft-blue hover:bg-white text-white hover:text-soft-blue border-2 border-soft-blue px-4 sm:px-6 py-3 rounded-md shadow-md text-sm font-medium transition-all duration-200 cursor-pointer"
+          >
+            Get it on Chrome
+          </button>
+
+          <button
+            class="bg-gray-100 hover:bg-white text-gray-700 hover:text-very-dark-blue border-2 border-transparent hover:border-very-dark-blue px-4 sm:px-6 py-3 rounded-md shadow-md text-sm font-medium transition-all duration-200 cursor-pointer"
+          >
+            Get it on Firefox
+          </button>
+        </div>
+      </div>
+
+  
+      <div class="flex-1 relative w-full flex justify-center md:justify-end">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="Illustration showing Bookmark interface"
+          class="w-full max-w-[540px] z-10"
+        />
+
+     
+        <div
+          class="absolute top-12 -right-6 md:-right-24 w-3/4 h-4/5 bg-soft-blue rounded-l-full -z-0"
+        ></div>
+      </div>
+    </section>
+
+  
+    <section id="features" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="max-w-md mx-auto text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-medium mb-4">Features</h2>
+        <p class="text-grayish-blue text-sm md:text-base leading-relaxed">
+          Our aim is to make it quick and easy for you to access your favorite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-center max-w-xl mx-auto border-t border-b md:border-t-0 border-gray-200 mb-16"
+      >
+        <button
+          class="py-4 md:px-8 text-very-dark-blue border-b-4 border-soft-red font-medium text-sm cursor-pointer"
+        >
+          Simple Bookmarking
+        </button>
+
+      
+        <button
+          class="py-4 md:px-8 text-grayish-blue hover:text-soft-red transition-colors text-sm font-medium cursor-pointer"
+        >
+          Speedy Searching
+        </button>
+
+   
+        <button
+          class="py-4 md:px-8 text-grayish-blue hover:text-soft-red transition-colors text-sm font-medium cursor-pointer"
+        >
+          Easy Sharing
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="max-w-6xl mx-auto px-6 pt-6 pb-28 flex flex-col md:flex-row items-center gap-12"
+    >
+      
+
+      <div
+        class="max-w-6xl mx-auto px-6 pb-28 flex relative w-full flex justify-center md:justify-start"
+      >
+        <img
+          src="./images/illustration-features-tab-2.svg"
+          alt="Illustration showing Bookmark interface"
+          class="w-full max-w-[540px] z-10"
+        />
+
+      
+        <div
+          class="absolute top-12 -left-6 md:-left-24 h-3/4 w-4/5 bg-soft-blue rounded-r-full -z-0"
+        ></div>
+      </div>
+
+      <div
+        class="flex-1 flex flex-col items-center md:items-start text-center md:text-left"
+      >
+      
+        <h2
+          class="text-2xl sm:text-3xl lg:text-4xl font-medium text-very-dark-blue mb-4 whitespace-normal md:whitespace-nowrap"
+        >
+          Bookmark in one click
+        </h2>
+
+       
+        <p
+          class="text-grayish-blue text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-lg"
+        >
+          Organize your bookmarks however you like. Our simple drag-and-drop
+          interface gives you complete control over how you manage your favorite
+          sites.
+        </p>
+    
+        <div class="flex items-center gap-4">
+          <button
+            class="bg-soft-blue hover:bg-white text-white hover:text-soft-blue border-2 border-soft-blue px-4 py-3 rounded-md shadow-md text-sm font-medium transition-all duration-200 cursor-pointer"
+          >
+            More info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="max-w-6xl mx-auto px-6 py-20">
+   
+      <div class="max-w-md mx-auto text-center mb-16">
+        <h2 class="text-2xl md:text-3xl font-medium mb-4 text-very-dark-blue">
+          Download the extension
+        </h2>
+        <p class="text-grayish-blue text-sm md:text-base leading-relaxed">
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favorite you'd like us to prioritize.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start justify-center max-w-5xl mx-auto"
+      >
+        
+        <div
+          class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg border border-gray-100 text-center"
+        >
+          <img
+            src="./images/logo-chrome.svg"
+            alt="Chrome logo"
+            class="mb-8 h-24"
+          />
+          <h3 class="text-xl font-medium text-very-dark-blue mb-2">
+            Add to Chrome
+          </h3>
+          <p class="text-grayish-blue text-sm mb-8">Minimum version 62</p>
+
+        
+          <div
+            class="w-full border-b-4 border-dotted border-gray-200 mb-6"
+          ></div>
+
+          <button
+            class="w-full bg-soft-blue hover:bg-white text-white hover:text-soft-blue border-2 border-soft-blue py-3 px-4 rounded-md shadow-md text-sm font-medium transition-colors duration-200 cursor-pointer"
+          >
+            Add & Install Extension
+          </button>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg border border-gray-100 text-center md:mt-8"
+        >
+          <img
+            src="./images/logo-firefox.svg"
+            alt="Firefox logo"
+            class="mb-8 h-24"
+          />
+          <h3 class="text-xl font-medium text-very-dark-blue mb-2">
+            Add to Firefox
+          </h3>
+          <p class="text-grayish-blue text-sm mb-8">Minimum version 55</p>
+
+         
+          <div
+            class="w-full border-b-4 border-dotted border-gray-200 mb-6"
+          ></div>
+
+          <button
+            class="w-full bg-soft-blue hover:bg-white text-white hover:text-soft-blue border-2 border-soft-blue py-3 px-4 rounded-md shadow-md text-sm font-medium transition-colors duration-200 cursor-pointer"
+          >
+            Add & Install Extension
+          </button>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg border border-gray-100 text-center md:mt-16"
+        >
+          <img
+            src="./images/logo-opera.svg"
+            alt="Opera logo"
+            class="mb-8 h-24"
+          />
+          <h3 class="text-xl font-medium text-very-dark-blue mb-2">
+            Add to Opera
+          </h3>
+          <p class="text-grayish-blue text-sm mb-8">Minimum version 46</p>
+
+         
+          <div
+            class="w-full border-b-4 border-dotted border-gray-200 mb-6"
+          ></div>
+
+          <button
+            class="w-full bg-soft-blue hover:bg-white text-white hover:text-soft-blue border-2 border-soft-blue py-3 px-4 rounded-md shadow-md text-sm font-medium transition-colors duration-200 cursor-pointer"
+          >
+            Add & Install Extension
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="faq" class="max-w-6xl mx-auto px-6 py-20">
+     
+      <div class="max-w-md mx-auto text-center mb-12">
+        <h2 class="text-2xl md:text-3xl font-medium text-very-dark-blue mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-grayish-blue text-sm md:text-base leading-relaxed">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+
+ 
+      <div
+        class="max-w-xl mx-auto divide-y divide-gray-200 border-t border-b border-gray-200 mb-12"
+      >
+     
+        <details class="group py-4 cursor-pointer">
+          <summary
+            class="flex items-center justify-between text-very-dark-blue hover:text-soft-red transition-colors list-none font-normal text-sm md:text-base"
+          >
+            <span>What is Bookmark?</span>
+            <svg
+              class="w-5 h-5 text-soft-blue group-hover:text-soft-red transition-transform duration-300 group-open:rotate-180 group-open:text-soft-red"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <p class="mt-4 text-grayish-blue text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus egestas quam a
+            ultricies sodales. Sed vel felis ut massa vulputate justo.
+          </p>
+        </details>
+
+     
+        <details class="group py-4 cursor-pointer" open>
+          <summary
+            class="flex items-center justify-between text-very-dark-blue hover:text-soft-red transition-colors list-none font-normal text-sm md:text-base"
+          >
+            <span>How can I request a new browser?</span>
+            <svg
+              class="w-5 h-5 text-soft-blue group-hover:text-soft-red transition-transform duration-300 group-open:rotate-180 group-open:text-soft-red"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <p class="mt-4 text-grayish-blue text-sm leading-relaxed">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </p>
+        </details>
+
+      
+        <details class="group py-4 cursor-pointer">
+          <summary
+            class="flex items-center justify-between text-very-dark-blue hover:text-soft-red transition-colors list-none font-normal text-sm md:text-base"
+          >
+            <span>Is there a mobile app?</span>
+            <svg
+              class="w-5 h-5 text-soft-blue group-hover:text-soft-red transition-transform duration-300 group-open:rotate-180 group-open:text-soft-red"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <p class="mt-4 text-grayish-blue text-sm leading-relaxed">
+            Sed vulputate quam vitae quam sodales, vel pharetra urna accumsan.
+            Vivamus eget imperdiet nequ. Aliquam id interdum mauris.
+          </p>
+        </details>
+
+   
+        <details class="group py-4 cursor-pointer">
+          <summary
+            class="flex items-center justify-between text-very-dark-blue hover:text-soft-red transition-colors list-none font-normal text-sm md:text-base"
+          >
+            <span>What about other Chromium browsers?</span>
+            <svg
+              class="w-5 h-5 text-soft-blue group-hover:text-soft-red transition-transform duration-300 group-open:rotate-180 group-open:text-soft-red"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <p class="mt-4 text-grayish-blue text-sm leading-relaxed">
+            Integer sollicitudin eros sed quam accumsan, ac ultrices magna
+            ultrices. In egestas nec dui at hendrerit. Phasellus semper dui
+            ante, nec sed.
+          </p>
+        </details>
+      </div>
+
+    
+      <div class="flex justify-center">
+        <button
+          class="bg-soft-blue hover:bg-white text-white hover:text-soft-blue border-2 border-soft-blue px-6 py-3 rounded-md shadow-md text-sm font-medium transition-all duration-200 cursor-pointer"
+        >
+          More Info
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-very-dark-blue py-8 w-full mt-auto m-70">
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+      
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <a href="#">
+            <img
+              src="./images/logo-bookmark.svg"
+              alt="Bookmark Logo"
+              class="h-6 brightness-0 invert"
+            />
+          </a>
+
+          <div
+            class="flex flex-col md:flex-row items-center gap-6 text-xs uppercase tracking-widest text-white"
+          >
+            <a href="#features" class="hover:text-soft-red transition-colors"
+              >Features</a
+            >
+            <a href="#pricing" class="hover:text-soft-red transition-colors"
+              >Pricing</a
+            >
+            <a href="#contact" class="hover:text-soft-red transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+      
+        <div class="flex items-center gap-8">
+          <a href="#" aria-label="Facebook">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="Facebook icon"
+              class="hover:text-soft-red transition-opacity hover:opacity-80"
+            />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="Twitter icon"
+              class="hover:text-soft-red transition-opacity hover:opacity-80"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
